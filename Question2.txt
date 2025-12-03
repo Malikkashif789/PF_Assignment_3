@@ -1,0 +1,13 @@
+Question # 02: Define any two from the following.
+
+a- Header Files:
+Header files in C++ contain declarations of functions, classes, variables, and macros that can be used in multiple source files. They typically have extensions like .h, .hpp, or .hxx. Header files are included in source code using the #include directive. They allow code reusability and separation of interface from implementation. For example, <iostream> is a header file that contains declarations for input/output operations.
+
+c- Comments:
+Comments in C++ are non-executable statements used to explain code logic, document functions, or temporarily disable code. There are two types:
+1. Single-line comments: Start with // and continue to the end of the line
+   Example: // This is a single-line comment
+2. Multi-line comments: Enclosed between /* and */
+   Example: /* This is a multi-line comment
+              spanning multiple lines */
+Comments improve code readability, help in debugging, and make code maintenance easier for other programmers.
