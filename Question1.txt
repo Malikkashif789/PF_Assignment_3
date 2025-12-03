@@ -1,0 +1,66 @@
+Question # 01: Find the errors in the following codes. If no error, then write output.
+
+(a) ERRORS:
+1. Loop condition is wrong: for(I=1;I>7;I++) → should be I<7 or I<=7
+2. Missing quotes in string: cout<<End of Program"; → should be cout<<"End of Program";
+3. main() should return 0, not 7
+
+CORRECTED CODE:
+#include<iostream>
+using namespace std;
+int main(){
+    int I,j;
+    for(I=1;I<=7;I++)
+        cout<<I;
+    cout<<"End of Program";
+    return 0;
+}
+
+OUTPUT if corrected: 1234567End of Program
+
+(b) ERRORS:
+1. Missing braces {} for if statement
+2. num1=num2; is placed between if and else without braces
+
+CORRECTED CODE:
+#include <iostream>
+using namespace std;
+int main(){
+    int num1=5, num2=10;
+    if(num1<num2) {
+        cout << "num1 is smallest";
+        num1=num2;
+    }
+    else
+        cout << "num2 is smallest";
+    return 0;
+}
+
+OUTPUT if corrected: num1 is smallest
+
+(c) NO ERRORS:
+OUTPUT:
+1 2  // from cout << a << b; (a=1, b=2)
+2 2  // from second cout << a << b; (a=2, b=2)
+
+Full output: 1222
+
+(d) ERRORS:
+1. Missing quotes: cout<<Center values"; → should be cout<<"Center values";
+2. Wrong variable name: cin>>ajcin>>b; → should be cin>>a>>b;
+3. Assignment is reversed: a+b=res; → should be res = a+b;
+
+CORRECTED CODE:
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"Center values";
+    int a,b,res;
+    cin>>a>>b;
+    a=20;b=-10;
+    res = a+b;
+    cout<<"res = "<<res;
+    return 0;
+}
+
+OUTPUT if corrected: Center valuesres = 10
